@@ -1,0 +1,55 @@
+<style>
+  .wrap{display:flex;gap:36px;flex-wrap:wrap;justify-content:center;align-items:flex-start;margin-top:14px}
+  .phone{width:260px;height:530px;background:#0d0f14;border:3px solid #333;border-radius:32px;padding:16px 12px;box-sizing:border-box;display:flex;flex-direction:column;gap:8px;color:#ddd;font:12px system-ui;position:relative}
+  .tip{position:absolute;top:-22px;left:0;right:0;text-align:center;font-size:11px;color:#888}
+  .row{display:flex;gap:6px}
+  .b{flex:1;background:#1e222b;border-radius:10px;padding:9px 2px;text-align:center}
+  .sm{padding:6px 2px;font-size:11px}
+  .pw{background:#5a1d1d}
+  .click{flex:1;background:#23324a;border:2px solid #3d5a85;border-radius:20px;display:flex;align-items:center;justify-content:center;text-align:center;color:#9cc0ff;font-weight:600}
+  .pill{flex:1.4;display:flex;background:#1e222b;border-radius:10px;overflow:hidden}
+  .pill div{flex:1;text-align:center;padding:9px 0}
+  .pill .lbl{flex:.8;font-size:9px;color:#888;align-self:center}
+  .mic{flex:1.2;background:#2b5d3a;border-radius:10px;padding:9px 2px;text-align:center;font-weight:600}
+  .legend{max-width:340px;font-size:13px;line-height:1.5}
+  .legend b{color:#9cc0ff}
+  .legend h3{margin:.2em 0 .4em}
+</style>
+
+<h2>Middle ground: A's buttons and C's big click area</h2>
+<p class="subtitle">Every button you listed stays on screen like A, in smaller rows, so the click area gets roughly 55% of the screen, close to C. Nothing is hidden in a drawer.</p>
+
+<div class="wrap">
+  <div class="phone">
+    <div class="tip">↑ aim at TV</div>
+    <div class="row">
+      <div class="b sm pw">⏻</div><div class="b sm">Inputs</div><div class="b sm">Menu</div><div class="b sm">🔇</div>
+    </div>
+    <div class="click">CLICK<br><small style="font-weight:400">tap = OK · hold = long-press<br>swipe up/down = scroll</small></div>
+    <div class="row">
+      <div class="b">← Back</div><div class="b">⌂ Home</div><div class="b">Recents</div>
+    </div>
+    <div class="row">
+      <div class="pill"><div>−</div><div class="lbl">VOL</div><div>+</div></div>
+      <div class="pill"><div>▼</div><div class="lbl">CH</div><div>▲</div></div>
+    </div>
+    <div class="row">
+      <div class="mic">🎤 Speak</div><div class="b">⌨ Type</div>
+    </div>
+  </div>
+
+  <div class="legend">
+    <h3>How it works</h3>
+    <p><b>Top row (small):</b> things you press less often: power, inputs, menu, mute.</p>
+    <p><b>Click area:</b> sits under your thumb when you hold the phone like a remote.</p>
+    <p><b>Back / Home / Recents:</b> just below the click area, so your thumb reaches them easily.</p>
+    <p><b>Volume and channel:</b> wide −/+ buttons. The phone's own volume keys also change the TV volume.</p>
+    <p><b>🎤 Speak:</b> tap it and say "Shah Rukh Khan movies". The phone turns your speech into text and types it into whichever search or text box is open on the TV. You see the words on the phone first, so you can catch mistakes.</p>
+    <p><b>⌨ Type:</b> opens the phone keyboard and types into the same box.</p>
+  </div>
+</div>
+
+<div class="options" style="max-width:520px;margin:20px auto 0">
+  <div class="option" data-choice="ok" onclick="toggleSelect(this)"><div class="letter">✓</div><div class="content"><h3>This is it</h3><p>Lock this layout in.</p></div></div>
+  <div class="option" data-choice="tweak" onclick="toggleSelect(this)"><div class="letter">~</div><div class="content"><h3>Close, needs changes</h3><p>Tell me what to change in the terminal.</p></div></div>
+</div>
